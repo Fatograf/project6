@@ -1,0 +1,68 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .page {
+    widh: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .head-f {
+    background-color: #0000FF;
+    width: 375px;
+    height: 100px;
+    color: white;
+    padding-left: 30px;
+    font-size: 25px;
+    font-family: Helvetica;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .foot div:last-of-type {
+    display: none; 
+  }
+  .rectangle {
+  /*  width: 45%;  */
+  width: 45%;
+    height: 165px;
+    border-color: #000000;
+    border-style: solid;
+    margin: 20px 23px; 
+    font-size: 25px;
+    font-family: Helvetica;
+    align-items: center;
+    text-align: center;
+  display: flex;
+  }
+  .rectangle-container {
+ /*   max-width: 1100px; /* Регулируем значение, 
+    чтобы карточки были в две строки */
+    display: flex;
+    flex-wrap: wrap; /* Чтобы карточки внутри
+     переносились на новую строчку, если не влезают по ширине */
+    justify-content: center;
+  }
+ 
+  @media only screen  and (max-width: 960px) {
+    .rectangle {
+   
+        margin: 10px;
+       width: 100%; /*  Перезаписываем ширину, 
+        чтобы карточки выстраивались в одну колонку
+         за счет flex-wrap у родителя */ 
+    }
+    
+}
+@media only screen and (min-width: 391px) {
+  .foot div:last-of-type {
+    display: block;
+    margin-right: 30px;
+}
+.foot {
+    justify-content: space-between;  
+}
+}
